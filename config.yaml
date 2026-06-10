@@ -1,0 +1,20 @@
+# 即梦批量生成器配置
+browser:
+  profile_dir: "./browser-profile"
+  headless: false  # 首次登录必须 false
+  start_url: "https://jimeng.jianying.com/"
+
+timing:
+  poll_interval_seconds: 10
+  max_wait_minutes: 30
+  page_load_timeout_seconds: 60
+
+retries:
+  max_task_retries: 2
+  download_retries: 3
+
+paths:
+  queue_file: "./queue.json"
+  inputs_dir: "./inputs"
+  outputs_dir: "./outputs"
+  logs_dir: "./logs"

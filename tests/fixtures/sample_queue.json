@@ -1,0 +1,48 @@
+{
+  "config": {
+    "poll_interval_seconds": 5,
+    "max_wait_minutes": 30,
+    "max_retries": 2,
+    "download_retries": 3
+  },
+  "tasks": [
+    {
+      "id": "001",
+      "references": ["inputs/001/ref1.jpg", "inputs/001/ref2.jpg"],
+      "prompt_file": "inputs/001/prompt.txt",
+      "params": {
+        "model": "Seedance 2.0 Fast",
+        "reference_mode": "全能参考",
+        "aspect_ratio": "9:16",
+        "duration": "5s",
+        "count": 1
+      },
+      "output": "outputs/001.mp4",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "video_url": null,
+      "retry_count": 0,
+      "error": null
+    },
+    {
+      "id": "002",
+      "references": ["inputs/002/ref1.jpg"],
+      "prompt_file": "inputs/002/prompt.txt",
+      "params": {
+        "model": "Seedance 2.0 Fast",
+        "reference_mode": "全能参考",
+        "aspect_ratio": "9:16",
+        "duration": "5s",
+        "count": 1
+      },
+      "output": "outputs/002.mp4",
+      "status": "completed",
+      "started_at": "2026-06-01T10:00:00",
+      "completed_at": "2026-06-01T10:15:00",
+      "video_url": "https://example.com/002.mp4",
+      "retry_count": 0,
+      "error": null
+    }
+  ]
+}
