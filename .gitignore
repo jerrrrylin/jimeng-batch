@@ -1,0 +1,7 @@
+browser-profile/
+outputs/
+logs/
+__pycache__/
+*.pyc
+.pytest_cache/
+queue.json
